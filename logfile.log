@@ -1,0 +1,41 @@
+[2024-05-16 20:45:38] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@17a7f733, com.backend.entity.Odontologo@68567e20]
+[2024-05-16 20:51:05] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@68567e20, com.backend.entity.Odontologo@76ed1b7c]
+[2024-05-16 20:57:29] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@68567e20, com.backend.entity.Odontologo@76ed1b7c]
+[2024-05-16 21:10:42] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@55740540, com.backend.entity.Odontologo@60015ef5]
+[2024-05-16 21:26:07] [ ERROR] [OdontologoDaoH2:78] Conversión de datos fallida, convirtiendo "Camilo"
+Data conversion error converting "Camilo" [22018-224]
+[2024-05-16 21:26:07] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: []
+[2024-05-16 21:31:45] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@568ff82, com.backend.entity.Odontologo@50caa560]
+[2024-05-16 21:39:55] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@50caa560, com.backend.entity.Odontologo@2a266d09]
+[2024-05-16 22:04:07] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@186f8716, com.backend.entity.Odontologo@1d8bd0de]
+[2024-05-16 22:34:25] [ ERROR] [OdontologoDaoH2:78] La base de datos puede que ya esté siendo utilizada: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 22:34:25] [ ERROR] [OdontologoDaoH2:85] Ha ocurrido un error al intentar cerrar la bdd. Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-05-16 22:34:25] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: []
+[2024-05-16 22:35:31] [ ERROR] [OdontologoDaoH2:78] La base de datos puede que ya esté siendo utilizada: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 22:35:31] [ ERROR] [OdontologoDaoH2:85] Ha ocurrido un error al intentar cerrar la bdd. Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-05-16 22:35:31] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: []
+[2024-05-16 22:36:37] [ ERROR] [OdontologoDaoH2:78] La base de datos puede que ya esté siendo utilizada: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: "C:/Users/Nathalia Guerrero/primerParcial1.mv.db". Possible solutions: close all other connection(s); use the server mode [90020-224]
+[2024-05-16 22:36:37] [ ERROR] [OdontologoDaoH2:85] Ha ocurrido un error al intentar cerrar la bdd. Cannot invoke "java.sql.Connection.close()" because "connection" is null
+[2024-05-16 22:36:37] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: []
+[2024-05-16 22:37:12] [ INFO ] [OdontologoDaoH2:90] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@186f8716, com.backend.entity.Odontologo@1d8bd0de]
+[2024-05-16 22:43:52] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@87a85e1, com.backend.entity.Odontologo@671a5887]
+[2024-05-16 22:43:56] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@11c9af63, com.backend.entity.Odontologo@757acd7b]
+[2024-05-16 22:49:07] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [com.backend.entity.Odontologo@186f8716, com.backend.entity.Odontologo@1d8bd0de]
+[2024-05-16 23:34:56] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [Odontologo{id=1, nombre='Camilo', apellido='Zuluaga', matricula='50001'}, Odontologo{id=2, nombre='Maria', apellido='Sanabria', matricula='50002'}]
+[2024-05-17 00:06:36] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}
+[2024-05-17 00:06:36] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}
+[2024-05-17 00:06:36] [ INFO ] [OdontologoDaoEnMemoria:22] Se ha registrado el odontologo: [Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}, Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}]
+[2024-05-17 00:08:11] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}
+[2024-05-17 00:08:11] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}
+[2024-05-17 00:08:11] [ INFO ] [OdontologoDaoEnMemoria:22] Lista de odontologos : [Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}, Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}]
+[2024-05-17 00:10:26] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}
+[2024-05-17 00:10:26] [ INFO ] [OdontologoDaoEnMemoria:16] Se ha registrado el odontologo: Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}
+[2024-05-17 00:10:26] [ INFO ] [OdontologoDaoEnMemoria:22] Lista de odontologos : [Odontologo{id=92233720368547707, nombre='Carlos', apellido='Mora', matricula='50001'}, Odontologo{id=92233720368547708, nombre='Maria', apellido='Lopez', matricula='50002'}]
+[2024-05-17 00:10:33] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [Odontologo{id=1, nombre='Camilo', apellido='Zuluaga', matricula='50001'}, Odontologo{id=2, nombre='Maria', apellido='Sanabria', matricula='50002'}]
+[2024-05-17 00:16:49] [ INFO ] [OdontologoDaoH2:37] Se ha registrado el odontologo: Odontologo{id=3, nombre='Lucia', apellido='Lopez', matricula='50003'}
+[2024-05-17 00:16:49] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [Odontologo{id=1, nombre='Camilo', apellido='Zuluaga', matricula='50001'}, Odontologo{id=2, nombre='Maria', apellido='Sanabria', matricula='50002'}, Odontologo{id=3, nombre='Lucia', apellido='Lopez', matricula='50003'}]
+[2024-05-17 00:17:50] [ INFO ] [OdontologoDaoH2:37] Se ha registrado el odontologo: Odontologo{id=4, nombre='Lucia', apellido='Lopez', matricula='50003'}
+[2024-05-17 00:17:51] [ INFO ] [OdontologoDaoH2:91] Listado de odontologos obtenidos: [Odontologo{id=1, nombre='Camilo', apellido='Zuluaga', matricula='50001'}, Odontologo{id=2, nombre='Maria', apellido='Sanabria', matricula='50002'}, Odontologo{id=3, nombre='Lucia', apellido='Lopez', matricula='50003'}, Odontologo{id=4, nombre='Lucia', apellido='Lopez', matricula='50003'}]
