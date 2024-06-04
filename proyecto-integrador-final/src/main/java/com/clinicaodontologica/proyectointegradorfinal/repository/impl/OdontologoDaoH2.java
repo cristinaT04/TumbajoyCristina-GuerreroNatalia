@@ -63,6 +63,11 @@ public class OdontologoDaoH2 implements IDao<Odontologo> {
     }
 
     @Override
+    public Odontologo buscarPorId(Long id) {
+        return null;
+    }
+
+    @Override
     public List<Odontologo> listarTodos() {
         Connection connection = null;
         List<Odontologo> odontologoList = new ArrayList<>();
