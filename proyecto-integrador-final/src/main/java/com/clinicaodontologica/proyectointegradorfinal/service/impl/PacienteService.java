@@ -22,6 +22,7 @@ public class PacienteService implements IPacienteService {
     public PacienteService(IDao<Paciente> pacienteIDao, ModelMapper modelMapper) {
         this.pacienteIDao = pacienteIDao;
         this.modelMapper = modelMapper;
+        configureMapping();
     }
 
     @Override
@@ -45,7 +46,6 @@ public class PacienteService implements IPacienteService {
 
         return pacientes;
     }
-
 
     private void configureMapping(){
         modelMapper.typeMap(PacienteEntradaDto.class, Paciente.class)
