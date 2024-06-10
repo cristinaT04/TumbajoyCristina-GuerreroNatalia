@@ -1,12 +1,21 @@
 package com.clinicaodontologica.proyectointegradorfinal.entity;
 
+import javax.persistence.*;
 import java.time.LocalDateTime;
-
+@Entity
+@Table(name = "TURNOS")
 public class Turno {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime fechaYHora;
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "odontologo_id")
     private Odontologo odontologo;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "paciente_id")
     private Paciente paciente;
 
     public Turno(LocalDateTime fechaYHora, Odontologo odontologo, Paciente paciente) {

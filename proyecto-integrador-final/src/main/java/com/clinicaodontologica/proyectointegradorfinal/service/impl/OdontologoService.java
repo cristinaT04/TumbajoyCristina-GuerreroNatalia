@@ -1,19 +1,18 @@
 package com.clinicaodontologica.proyectointegradorfinal.service.impl;
 
 import com.clinicaodontologica.proyectointegradorfinal.entity.Odontologo;
-import com.clinicaodontologica.proyectointegradorfinal.repository.IDao;
+import com.clinicaodontologica.proyectointegradorfinal.repository.OdontologoRepository;
 import com.clinicaodontologica.proyectointegradorfinal.service.IOdontologoService;
 
 import java.util.List;
 
 public class OdontologoService implements IOdontologoService {
 
-    private IDao<Odontologo> odontologoIDao;
+    private OdontologoRepository odontologoRepository;
 
-    public OdontologoService(IDao<Odontologo> odontologoIDao) {
-        this.odontologoIDao = odontologoIDao;
+    public OdontologoService(OdontologoRepository odontologoRepository) {
+        this.odontologoRepository = odontologoRepository;
     }
-
 
     @Override
     public Odontologo registrarOdontologo(Odontologo odontologo) {
