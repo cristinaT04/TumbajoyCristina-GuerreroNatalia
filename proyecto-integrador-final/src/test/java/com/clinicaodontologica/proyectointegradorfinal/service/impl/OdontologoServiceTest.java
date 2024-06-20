@@ -2,8 +2,10 @@ package com.clinicaodontologica.proyectointegradorfinal.service.impl;
 
 import com.clinicaodontologica.proyectointegradorfinal.dto.entrada.OdontologoEntradaDto;
 import com.clinicaodontologica.proyectointegradorfinal.dto.salida.OdontologoSalidaDto;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;
@@ -15,6 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-test.properties")
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class OdontologoServiceTest {
 
     @Autowired
