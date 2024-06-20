@@ -24,6 +24,10 @@ public class Paciente {
     public Paciente() {
     }
 
+    public Paciente(Long id) {
+        this.id = id;
+    }
+
     public Paciente(String nombre, String apellido, int dni, LocalDate fechaIngreso, Domicilio domicilio) {
         this.nombre = nombre;
         this.apellido = apellido;

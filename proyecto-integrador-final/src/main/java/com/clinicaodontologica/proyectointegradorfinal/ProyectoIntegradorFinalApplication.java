@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 public class ProyectoIntegradorFinalApplication {
 
 	public static void main(String[] args) {
-		H2Connection.crearTablas();
+//		H2Connection.crearTablas();
 		SpringApplication.run(ProyectoIntegradorFinalApplication.class, args);
 	}
 

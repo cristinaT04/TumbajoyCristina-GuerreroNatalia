@@ -12,6 +12,9 @@ public class DomicilioSalidaDto {
 
     private String provincia;
 
+    public DomicilioSalidaDto() {
+    }
+
     public DomicilioSalidaDto(Long id, String calle, int numero, String localidad, String provincia) {
         this.id = id;
         this.calle = calle;

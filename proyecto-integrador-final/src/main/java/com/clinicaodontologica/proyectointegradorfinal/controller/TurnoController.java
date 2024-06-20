@@ -2,7 +2,9 @@ package com.clinicaodontologica.proyectointegradorfinal.controller;
 
 import com.clinicaodontologica.proyectointegradorfinal.dto.entrada.TurnoEntradaDto;
 import com.clinicaodontologica.proyectointegradorfinal.dto.salida.TurnoSalidaDto;
+import com.clinicaodontologica.proyectointegradorfinal.exceptions.BadRequestException;
 import com.clinicaodontologica.proyectointegradorfinal.exceptions.ResourceNotFoundException;
+import com.clinicaodontologica.proyectointegradorfinal.service.ITurnoService;
 import com.clinicaodontologica.proyectointegradorfinal.service.impl.TurnoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -13,16 +15,17 @@ import java.util.List;
 
 @RestController
 @RequestMapping("turnos")
+@CrossOrigin
 public class TurnoController {
 
-    private TurnoService turnoService;
+    private ITurnoService turnoService;
 
-    public TurnoController(TurnoService turnoService) {
+    public TurnoController(ITurnoService turnoService) {
         this.turnoService = turnoService;
     }
 
-    @PostMapping("/registar")
-    public ResponseEntity<TurnoSalidaDto> registrarTurno(@RequestBody @Valid TurnoEntradaDto turnoEntradaDto){
+    @PostMapping("/registrar")
+    public ResponseEntity<TurnoSalidaDto> registrarTurno(@RequestBody @Valid TurnoEntradaDto turnoEntradaDto) throws BadRequestException{
         return new ResponseEntity<>(turnoService.registrarTurno(turnoEntradaDto), HttpStatus.CREATED);
     }
 

@@ -32,4 +32,12 @@ public class GlobalExceptionHandler {
         });
         return mensaje;
     }
+
+    @ExceptionHandler(BadRequestException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public Map<String, String> manejarBadRequestException(BadRequestException badRequestException){
+        Map<String, String> mensaje =  new HashMap<>();
+        mensaje.put("mensaje", "BAD_REQUEST: " + badRequestException.getMessage());
+        return mensaje;
+    }
 }

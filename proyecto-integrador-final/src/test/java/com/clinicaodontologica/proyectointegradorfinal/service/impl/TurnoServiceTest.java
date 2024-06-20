@@ -5,6 +5,8 @@ import com.clinicaodontologica.proyectointegradorfinal.dto.entrada.OdontologoEnt
 import com.clinicaodontologica.proyectointegradorfinal.dto.entrada.PacienteEntradaDto;
 import com.clinicaodontologica.proyectointegradorfinal.dto.entrada.TurnoEntradaDto;
 import com.clinicaodontologica.proyectointegradorfinal.dto.salida.TurnoSalidaDto;
+import com.clinicaodontologica.proyectointegradorfinal.entity.Odontologo;
+import com.clinicaodontologica.proyectointegradorfinal.entity.Paciente;
 import com.clinicaodontologica.proyectointegradorfinal.repository.TurnoRepository;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,17 +25,21 @@ public class TurnoServiceTest {
     @Autowired
     private TurnoService turnoService;
 
+    private PacienteService pacienteService;
+
+    private OdontologoService odontologoService;
+
     @Test
     public void deberiaRegistrarUnTurno(){
-        OdontologoEntradaDto odontologo = new OdontologoEntradaDto("50003", "Lucia","Lopez");
-        PacienteEntradaDto paciente = new PacienteEntradaDto("Maria", "Lopez", 523458,LocalDate.of(2024,6,13),new DomicilioEntradaDto("calle 21",25,"Torres", "Local"));
+        Odontologo odontologo = new Odontologo();
+        Paciente paciente = new Paciente();
 
-        TurnoEntradaDto turno = new TurnoEntradaDto(LocalDateTime.now(),odontologo,paciente);
+        TurnoEntradaDto turno = new TurnoEntradaDto(LocalDateTime.now(),odontologo.getId(),paciente.getId());
 
         TurnoSalidaDto turnoRegistrado = turnoService.registrarTurno(turno);
 
         assertNotNull(turnoRegistrado.getFechaYHora());
-        assertNotNull(turnoRegistrado.getOdontologoSalidaDto().getId());
+        assertNotNull(turnoRegistrado.getOdontologoId());
 
 
     }

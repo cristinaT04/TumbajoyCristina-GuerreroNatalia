@@ -10,13 +10,17 @@ public class Turno {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private LocalDateTime fechaYHora;
-    @OneToOne(cascade = CascadeType.ALL)
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "odontologo_id")
     private Odontologo odontologo;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
+
+    public Turno() {
+    }
 
     public Turno(LocalDateTime fechaYHora, Odontologo odontologo, Paciente paciente) {
         this.fechaYHora = fechaYHora;

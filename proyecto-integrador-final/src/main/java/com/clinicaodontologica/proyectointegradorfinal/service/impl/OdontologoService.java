@@ -31,11 +31,11 @@ public class OdontologoService implements IOdontologoService {
     @Override
     public OdontologoSalidaDto registrarOdontologo(OdontologoEntradaDto odontologoEntradaDto) {
 
-        LOGGER.info("OdontologoEntradaDto: " + odontologoEntradaDto);
+        LOGGER.info("OdontologoEntradaDto: " + JsonPrinter.toString(odontologoEntradaDto) );
         Odontologo odontologo = modelMapper.map(odontologoEntradaDto, Odontologo.class);
-        LOGGER.info("OdontologoEntidad: " + odontologo);
+        LOGGER.info("OdontologoEntidad: " + JsonPrinter.toString(odontologo));
         OdontologoSalidaDto odontologoSalidaDto = modelMapper.map(odontologoRepository.save(odontologo), OdontologoSalidaDto.class);
-        LOGGER.info("OdontologoSalidaDto: " + odontologoSalidaDto);
+        LOGGER.info("OdontologoSalidaDto: " + JsonPrinter.toString(odontologoSalidaDto));
         return odontologoSalidaDto;
     }
 
